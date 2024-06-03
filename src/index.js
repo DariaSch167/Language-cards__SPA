@@ -1,4 +1,4 @@
-import "./main.scss";
+import "./styles/main.scss";
 
 function component(text) {
   const element = document.createElement("h1");
@@ -6,4 +6,4 @@ function component(text) {
   return element;
 }
 
-document.body.prepend(component("Проект собран на Webpack"));
+document.body.prepend(component("Here is something OKAY on Webpack"));

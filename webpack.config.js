@@ -4,11 +4,13 @@ const FileManagerPlugin = require("filemanager-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: path.join(__dirname, "src", "index.js"),
+  entry: path.join(__dirname, "src", "index.js").replaceAll("\\", "/"),
   output: {
-    path: path.join(__dirname, "dist"),
+    path: path.join(__dirname, "dist").replaceAll("\\", "/"),
     filename: "index.[contenthash].js",
-    assetModuleFilename: path.join("images", "[name].[contenthash][ext]"),
+    assetModuleFilename: path
+      .join("images", "[name].[contenthash][ext]")
+      .replaceAll("\\", "/"),
   },
   module: {
     rules: [
@@ -31,6 +33,15 @@ module.exports = {
         ],
       },
       {
+        test: /\.(woff2?|eot|ttf|otf)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: path
+            .join("fonts", "[name].[contenthash][ext]")
+            .replaceAll("\\", "/"),
+        },
+      },
+      {
         test: /\.(png|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
@@ -38,14 +49,18 @@ module.exports = {
         test: /\.svg$/,
         type: "asset/resource",
         generator: {
-          filename: path.join("icons", "[name].[contenthash][ext]"),
+          filename: path
+            .join("icons", "[name].[contenthash][ext]")
+            .replaceAll("\\", "/"),
         },
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src", "template.html"),
+      template: path
+        .join(__dirname, "src", "template.html")
+        .replaceAll("\\", "/"),
       filename: "index.html",
     }),
     new FileManagerPlugin({
@@ -68,7 +83,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    watchFiles: path.join(__dirname, "src"),
+    watchFiles: path.join(__dirname, "src").replaceAll("\\", "/"),
     port: 9000,
   },
 };

@@ -1,3 +1,5 @@
+@import "fonts.scss";
+
 $font-size: 1rem;
 $font-color: lch(28 99 35);
 
@@ -11,4 +13,13 @@ html {
 }
 .logo2 {
   width: 10em;
+}
+
+h1 {
+  font-family: "Cookie", serif;
+  font-size: 40px;
+}
+p {
+  font-family: "Quattrocento Sans", serif;
+  font-size: 40px;
 }
