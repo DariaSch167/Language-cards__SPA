@@ -1,10 +1,10 @@
 import React from "react";
 
-function Header() {
+function Footer() {
   return (
     <React.Fragment>
-      <h1>Hey! It's header speaking! </h1>
+      <h2>Yo, footer at the bottom!</h2>
     </React.Fragment>
   );
 }
-export default Header;
+export default Footer;
