@@ -6,6 +6,7 @@ $font-color: lch(28 99 35);
 html {
   font-size: $font-size;
   color: $font-color;
+  background-color: #111111;
 }
 
 .logo1 {
@@ -16,7 +17,6 @@ html {
 }
 
 h1 {
-  font-family: "Cookie", serif;
   font-size: 40px;
 }
 p {
