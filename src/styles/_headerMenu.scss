@@ -1,0 +1,13 @@
+.header__menu {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  & button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    & img {
+      object-fit: cover;
+    }
+  }
+}

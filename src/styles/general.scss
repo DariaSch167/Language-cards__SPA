@@ -1,0 +1,36 @@
+@import "fonts.scss";
+@import "variables.scss";
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: $font-size;
+  color: $font-color;
+  background-color: $background-color;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+}
+.main__wrapper {
+  flex-grow: 1;
+}

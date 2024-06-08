@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/_headerMenu.scss";
 import headerHome from "../images/header_home.svg";
 import headerGame from "../images/header_game.svg";
 import headerFAQ from "../images/header_faq.svg";

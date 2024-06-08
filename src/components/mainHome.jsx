@@ -1,5 +1,4 @@
 import React from "react";
-import Game from "./game.jsx";
 
 function Main() {
   return (

@@ -1,9 +1,12 @@
 import React from "react";
+import "../styles/_footer.scss";
 
 function Footer() {
   return (
     <React.Fragment>
-      <h2>Yo, footer at the bottom!</h2>
+      <footer className="footer">
+        <h2>Yo, footer at the bottom!</h2>
+      </footer>
     </React.Fragment>
   );
 }
