@@ -1,12 +1,12 @@
 import React from "react";
-import Game from "./game.jsx";
+import GameMain from "./GameMain.jsx";
+import "../styles/general.scss";
 
 function Main() {
   return (
     <React.Fragment>
       <main className="main">
-        <h2>Wait for main part... </h2>
-        <Game />
+        <GameMain />
       </main>
     </React.Fragment>
   );

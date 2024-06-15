@@ -1,0 +1,13 @@
+@import "variables.scss";
+
+.game-main {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  height: 100%;
+  &__aside {
+    background-color: $background-aside;
+  }
+  &__field {
+    background-color: $background-main;
+  }
+}

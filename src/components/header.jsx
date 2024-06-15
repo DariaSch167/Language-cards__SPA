@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/_header.scss";
-import HeaderMenu from "./headerMenu.jsx";
+import HeaderMenu from "./HeaderMenu.jsx";
 import headerLogo from "../images/header_logo.svg";
 
 function Header() {
